@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --mainColor:rgb(96,193,222);
+    --whiteColor:#fff;
+    --blackColor:#000;
+}
+body{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+}
+/* Start nav Section */
+.navbar-expand-lg{
+    background-color: var(--mainColor);
+}
+.navbar-brand{
+    color: var(--whiteColor);
+}
+.navbar-brand:hover{
+    color: var(--whiteColor);
+}
+.nav-link{
+    color: var(--whiteColor);
+}
+.nav-link:hover{
+    color: var(--whiteColor);
+}
+.navbar-nav .nav-link.active{
+    background-color: var(--whiteColor);
+    color: var(--mainColor);
+    border-radius: 20px;
+    font-weight: 600;
+    width: fit-content;
+}
+/* End nav Secton */
+/* Start Home Section */
+.home{
+    background-image: url(../img/light_dot.jpg);
+}
+.home-heading{
+    font-weight: 600;
+}
+.read-btn{
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+}
+/* End Home Section */
+/* Start cats Section */
+.cat{
+    background-color: var(--mainColor);
+}
+.card{
+    text-align: center;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.cat h3{
+    background-color: var(--whiteColor);
+    text-align: center;
+    width: fit-content;
+    border-radius: 3px;
+    padding: 3px;
+    margin: auto;
+    transform: translateY(-15px);
+    z-index: 999;
+    position: relative;
+}
+.card h5{
+    color: var(--mainColor);
+}
+/* End Cats Section */
