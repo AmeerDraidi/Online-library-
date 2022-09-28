@@ -73,3 +73,58 @@ body{
     color: var(--mainColor);
 }
 /* End Cats Section */
+/* Start Books Section */
+.book .title{
+    font-size: 30px;
+    color: var(--mainColor);
+}
+.title p{
+    color: #000;
+}
+
+.book-cover img{
+    width: 86%;
+    border-radius: 10px 10px 0px 0px;
+}
+.content{
+    width: 86%;
+    margin: 0 auto;
+    border-left: 1px solid #979797;
+    border-right: 1px solid #979797;
+}
+.book-cover .content .name{
+    font-size: 18px;
+    font-weight: 700;
+}
+.book-cover .content .author{
+    color: #979797;
+    font-size: 15px;
+}
+.book-cover .order-btn{
+    background-color: #fff;
+    padding: 5% 28.6%;
+    border: 2px solid var(--mainColor);
+    border-radius: 0px 0px 10px 10px;
+    color: var(--mainColor);
+}
+.order-btn:hover{
+    background-color: var(--mainColor);
+    color: #fff;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color:#979797;
+  }
+
+
+/* End Books Section */
