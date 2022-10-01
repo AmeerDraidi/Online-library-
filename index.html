@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
 </head>
 
 <body>
@@ -248,6 +249,89 @@
   </section>
   <!-- end of books section -->
 
+  <!-- start of slider section -->
+  <section class="slider">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active slide1">
+            <div class="slide-content">
+                <p>
+                    " هناك ثمة وقت في حياة الإنسان إذا انتفع به نال فوزاً ومجداً، وإذا لم ينتهز الفرصة أصبحت حياته عديمة الفائدة وبائسة. "
+                </p>
+                <p>وليام شكسبير</p>
+            </div>
+          </div>
+          <div class="carousel-item slide2">
+            <div class="slide-content">
+                <p>
+                  " إذا لم تقرأ سوى الكتب التي يقرؤها سواك، فلن تفكر سوى بما يفكر به سواك. "
+
+                </p>
+                <p>
+                    هاروكي موراكامي
+                </p>
+            </div>
+          </div>
+          <div class="carousel-item slide3">
+            <div class="slide-content">
+                <p>
+                   "  قد تكون أفضل الطرق أصعبها و لكن عليك دائماً اتباعها ، إذ أنّ الاعتياد عليها سيجعل الأمور تبدو سهلة .  "
+                </p>
+                <p>
+                    أبو الطيب المتنبي
+                </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  <!-- end of slider section -->
+
+  <!-- start of gallery section -->
+  <section class="image-gallery">
+    <div class="container">
+      <div class="my-4 title">
+          <i class="fa-regular fa-images"></i>
+          <h2>Gallery</h2>
+      </div>
+      <div class="gallery">
+              <a href="assets/img/gallery/pic1.jpg" data-lightbox="models" data-title="Caption1" class="pic1">
+              </a>
+              <a href="assets/img/gallery/pic2.jpg" data-lightbox="models" data-title="Caption2" class="pic2">
+              </a>
+              <a href="assets/img/gallery/pic3.jpg" data-lightbox="models" data-title="Caption3" class="pic3">
+              </a>
+              <a href="assets/img/gallery/pic4.jpg" data-lightbox="models" data-title="Caption4" class="pic4">
+              </a>
+              <a href="assets/img/gallery/pic5.jpg" data-lightbox="models" data-title="Caption5" class="pic5">
+              </a>
+              <a href="assets/img/gallery/pic6.jpg" data-lightbox="models" data-title="Caption6" class="pic6">
+              </a>
+              <a href="assets/img/gallery/pic7.jpg" data-lightbox="models" data-title="Caption7" class="pic7">
+              </a>
+              <a href="assets/img/gallery/pic8.jpg" data-lightbox="models" data-title="Caption8" class="pic8">
+              </a>
+              <a href="assets/img/gallery/pic9.jpg" data-lightbox="models" data-title="Caption9" class="pic9">
+              </a>
+          
+      </div>
+    </div>
+  </section>
+  <!-- start of gallery section -->
+
   <!-- start of writer section -->
   <section class="writer">
     <h2 id="writer" class="heading text-capitalize  m-0 p-0">writer</h2>
@@ -454,6 +538,7 @@
 
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/lightbox-plus-jquery.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
