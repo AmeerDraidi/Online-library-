@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التصنيفات</title>
+  <link rel="icon" href="assets/img/logo.jpg">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.29/sweetalert2.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+</head>
+<body>
+  <div class="container w-50 mt-5">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">اسم الصنف</label>
+        <input type="text"  class="form-control" id="name" aria-describedby="emailHelp">
+        <div class="alert alert-danger d-none" id="catalert"></div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">صورة الصنف</label>
+        <input type="file" id="img"  class="form-control">
+      </div>
+      <button type="submit" id="submitBtn" class="btn btn-primary">إضافة</button>
+      <button type="button" class="btn btn-danger" id="clearallcats">حذف الكل</button>
+
+      
+  </div>
+
+  <div class="container mt-5 w-50">
+    <table class="table table-striped table-hover">
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>الإسم</th>
+              <th>الصورة</th>
+              <th>العمليات</th>
+          </tr>
+          <tbody id="tbody">
+
+          </tbody>
+
+      </thead>
+      
+    </table>
+
+  </div>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/lightbox-plus-jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.29/sweetalert2.min.js"></script>
+  <script src="assets/js/cat.js"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
+</body>
+  
+</html>
