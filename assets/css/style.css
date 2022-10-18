@@ -336,8 +336,138 @@ body {
 /* End Gallery Section */
 
 /* start of writer */
+.writer{
+    background-color: rgba(96, 193, 222,0.1);
+    position: relative;
+    padding: 30px 0;
+    margin: 100px 0 60px 0;
+    border-top: 4px solid var(--mainColor);
+    border-bottom: 4px solid var(--mainColor);
+}
+.heading {
+    font-family: 'Baloo Tammudu 2';
+    font-weight: 600;
+    margin: 2rem;
+    display: inline-block;
+    background-color: var(--whiteColor);
+    border-radius: 5px;
+    font-size: 1.7rem;
+    height: 3rem;
+    width: 6.5rem;
+    line-height: 4rem;
+    text-align: center;
+    position: absolute;
+    top: -1.5rem;
+    left: calc(50% - 3.25rem);
+    z-index: 1;
+    box-shadow: 1px 1px 5px rgb(54, 53, 53);
+}
 
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px 25px 0px 25px;
+    cursor: grab;
 
+}
+.card{
+    border-radius: 25px 25px 0px 25px;
+    background-color: var(--mainColor);
+}
+.image-content , .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+
+}
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+    
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(127, 130, 131);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px 25px 0 25px;
+
+}
+.overlay::before , .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(127, 130, 131);
+
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: var(--mainColor);
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(31, 110, 134);
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--mainColor);;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+.swiper-navBtn{
+    color: black;
+    transition: all 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: var(--mainColor);;
+}
+.swiper-navBtn::before, .swiper-navBtn::after{
+    font-size: 40px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: rgba(96, 193, 222,0.5);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--mainColor);
+}
+@media screen and (max-width: 768px){
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+}
+/* 
 .writer {
     text-align: center;
 }
@@ -445,7 +575,7 @@ body {
     .x4 {
         display: none;
     }
-}
+} */
 
 /* end of writer */
 

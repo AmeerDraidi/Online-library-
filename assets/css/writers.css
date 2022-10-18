@@ -1,0 +1,18 @@
+.form-container{
+    width: 50%;
+}
+.table-container{
+    width: 50%;
+}
+.card-img{
+    min-width: 100px;
+    min-height: 100px;
+}
+@media screen and (max-width:810px){
+    .form-container{
+        width: 100%;
+    }
+    .table-container{
+        width: 100%;
+    }
+}

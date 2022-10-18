@@ -9,8 +9,12 @@
   <link rel="icon" href="assets/img/logo.jpg">
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- LightBox CSS -->
   <link rel="stylesheet" href="assets/css/lightbox.css">
+     <!-- Swiper CSS -->
+     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
 </head>
 
 <body>
@@ -302,7 +306,18 @@
 
   <!-- start of writer section -->
   <section class="writer">
-    <h2 id="writer" class="heading text-capitalize  m-0 p-0">writer</h2>
+    <h2 id="writer" class="heading text-capitalize  m-0 p-0">writers</h2>
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper" id="writers">
+        </div>
+
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+    </div>
+    <!-- <h2 id="writer" class="heading text-capitalize  m-0 p-0">writer</h2>
     <div class="contentt position-relative m-auto">
 
       <div class="container-fluid">
@@ -371,7 +386,7 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
@@ -537,6 +552,8 @@
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/lightbox-plus-jquery.js"></script>
+  <!-- Swiper JS -->
+<script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js" type="module"></script>
 </body>
 
