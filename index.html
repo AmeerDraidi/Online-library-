@@ -11,17 +11,34 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- LightBox CSS -->
   <link rel="stylesheet" href="assets/css/lightbox.css">
-     <!-- Swiper CSS -->
-     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  
+
 </head>
 
 <body>
+
+
+  <!-- start loader -->
+  <div class="loader">
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+
+
+
+  <!-- end loader -->
+
   <!-- Start nav Section -->
   <nav class="navbar navbar-expand-lg navbar-light py-3">
     <div class="container">
-      <a class="navbar-brand" href="#">مكتبة النور</a>
+      <a class="navbar-brand heads" href="#">مكتبة النور</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,28 +46,28 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">الصفحة الرئيسية</a>
+            <a class="nav-link heads" aria-current="page" href="#">الصفحة الرئيسية</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">كل الكتب</a>
+            <a class="nav-link heads" href="#">كل الكتب</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#cat">التصنيفات</a>
+            <a class="nav-link heads" href="#cat">التصنيفات</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#writers">الكَتاب</a>
+            <a class="nav-link heads" href="#writers">الكَتاب</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gallery">المعرض</a>
+            <a class="nav-link heads" href="#gallery">المعرض</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">من نحن</a>
+            <a class="nav-link heads" href="#about">من نحن</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">تسجيل الدخول</a>
           </li>
 
-
+        </ul>
       </div>
     </div>
   </nav>
@@ -256,52 +273,58 @@
   <!-- start of slider section -->
   <section class="slider">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active slide1">
-            <div class="slide-content">
-                <p>
-                    " هناك ثمة وقت في حياة الإنسان إذا انتفع به نال فوزاً ومجداً، وإذا لم ينتهز الفرصة أصبحت حياته عديمة الفائدة وبائسة. "
-                </p>
-                <p>وليام شكسبير</p>
-            </div>
-          </div>
-          <div class="carousel-item slide2">
-            <div class="slide-content">
-                <p>
-                  " إذا لم تقرأ سوى الكتب التي يقرؤها سواك، فلن تفكر سوى بما يفكر به سواك. "
-
-                </p>
-                <p>
-                    هاروكي موراكامي
-                </p>
-            </div>
-          </div>
-          <div class="carousel-item slide3">
-            <div class="slide-content">
-                <p>
-                   "  قد تكون أفضل الطرق أصعبها و لكن عليك دائماً اتباعها ، إذ أنّ الاعتياد عليها سيجعل الأمور تبدو سهلة .  "
-                </p>
-                <p>
-                    أبو الطيب المتنبي
-                </p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
-    </section>
+      <div class="carousel-inner">
+        <div class="carousel-item active slide1">
+          <div class="slide-content">
+            <p>
+              " هناك ثمة وقت في حياة الإنسان إذا انتفع به نال فوزاً ومجداً، وإذا لم ينتهز الفرصة أصبحت حياته عديمة
+              الفائدة وبائسة. "
+            </p>
+            <p>وليام شكسبير</p>
+          </div>
+        </div>
+        <div class="carousel-item slide2">
+          <div class="slide-content">
+            <p>
+              " إذا لم تقرأ سوى الكتب التي يقرؤها سواك، فلن تفكر سوى بما يفكر به سواك. "
+
+            </p>
+            <p>
+              هاروكي موراكامي
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item slide3">
+          <div class="slide-content">
+            <p>
+              " قد تكون أفضل الطرق أصعبها و لكن عليك دائماً اتباعها ، إذ أنّ الاعتياد عليها سيجعل الأمور تبدو سهلة . "
+            </p>
+            <p>
+              أبو الطيب المتنبي
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
   <!-- end of slider section -->
 
   <!-- start of writer section -->
@@ -314,8 +337,8 @@
 
       </div>
       <div class="swiper-button-next swiper-navBtn"></div>
-    <div class="swiper-button-prev swiper-navBtn"></div>
-    <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
     </div>
     <!-- <h2 id="writer" class="heading text-capitalize  m-0 p-0">writer</h2>
     <div class="contentt position-relative m-auto">
@@ -398,35 +421,35 @@
   <section class="image-gallery">
     <div class="container">
       <div class="my-4 title">
-          <i class="fa-regular fa-images"></i>
-          <h2>Gallery</h2>
+        <i class="fa-regular fa-images"></i>
+        <h2>Gallery</h2>
       </div>
       <div class="gallery">
-              <a href="assets/img/gallery/pic1.jpg" data-lightbox="models" data-title="Caption1" class="pic1">
-              </a>
-              <a href="assets/img/gallery/pic2.jpg" data-lightbox="models" data-title="Caption2" class="pic2">
-              </a>
-              <a href="assets/img/gallery/pic3.jpg" data-lightbox="models" data-title="Caption3" class="pic3">
-              </a>
-              <a href="assets/img/gallery/pic4.jpg" data-lightbox="models" data-title="Caption4" class="pic4">
-              </a>
-              <a href="assets/img/gallery/pic5.jpg" data-lightbox="models" data-title="Caption5" class="pic5">
-              </a>
-              <a href="assets/img/gallery/pic6.jpg" data-lightbox="models" data-title="Caption6" class="pic6">
-              </a>
-              <a href="assets/img/gallery/pic7.jpg" data-lightbox="models" data-title="Caption7" class="pic7">
-              </a>
-              <a href="assets/img/gallery/pic8.jpg" data-lightbox="models" data-title="Caption8" class="pic8">
-              </a>
-              <a href="assets/img/gallery/pic9.jpg" data-lightbox="models" data-title="Caption9" class="pic9">
-              </a>
-          
+        <a href="assets/img/gallery/pic1.jpg" data-lightbox="models" data-title="Caption1" class="pic1">
+        </a>
+        <a href="assets/img/gallery/pic2.jpg" data-lightbox="models" data-title="Caption2" class="pic2">
+        </a>
+        <a href="assets/img/gallery/pic3.jpg" data-lightbox="models" data-title="Caption3" class="pic3">
+        </a>
+        <a href="assets/img/gallery/pic4.jpg" data-lightbox="models" data-title="Caption4" class="pic4">
+        </a>
+        <a href="assets/img/gallery/pic5.jpg" data-lightbox="models" data-title="Caption5" class="pic5">
+        </a>
+        <a href="assets/img/gallery/pic6.jpg" data-lightbox="models" data-title="Caption6" class="pic6">
+        </a>
+        <a href="assets/img/gallery/pic7.jpg" data-lightbox="models" data-title="Caption7" class="pic7">
+        </a>
+        <a href="assets/img/gallery/pic8.jpg" data-lightbox="models" data-title="Caption8" class="pic8">
+        </a>
+        <a href="assets/img/gallery/pic9.jpg" data-lightbox="models" data-title="Caption9" class="pic9">
+        </a>
+
       </div>
     </div>
   </section>
   <!-- start of gallery section -->
 
-  
+
 
   <!-- start of about section  -->
   <section class="about pb-5 mt-5 ">
@@ -553,7 +576,11 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/lightbox-plus-jquery.js"></script>
   <!-- Swiper JS -->
-<script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- jquery -->
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <!-- main Js file  -->
   <script src="assets/js/main.js" type="module"></script>
 </body>
 
