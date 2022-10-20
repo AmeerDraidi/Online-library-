@@ -23,7 +23,7 @@ html {
 body {
     direction: rtl;
     font-family: 'Cairo', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -187,7 +187,7 @@ body {
 }
 
 .card h5 {
-    color: var(--mainColor);
+    color: var(--whiteColor);
 }
 
 /* End Cats Section */

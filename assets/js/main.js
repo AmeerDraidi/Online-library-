@@ -3,7 +3,7 @@ const showBooks = document.getElementById("bookshow");
 let catsHome;
 let booksHome;
 
-if(localStorage.getItem("catsList") != null && localStorage.getItem("booksList") != null){
+if(localStorage.getItem("catsList") != null || localStorage.getItem("booksList") != null){
     catsHome = JSON.parse(localStorage.getItem("catsList"));
     booksHome = JSON.parse(localStorage.getItem("booksList"));
     catDisplay();
@@ -20,7 +20,7 @@ function BookDisplay(){
       <div class="content">
         <h4 class="name">${booksHome[i].name}</h4>
         <p class="author">${booksHome[i].author}</p>
-        <p class="m-0">${booksHome[i].price}</p>
+        <p class="m-0">${booksHome[i].price}$</p>
       </div>
       <button class="btn order-btn mb-5">Order Now</button>
     </div>
@@ -48,7 +48,7 @@ function select() {
   let catData = "";
   for (let i = 0; i < catsHome.length; i++) {
     catData += `
-      <option value="${i}">${catsHome[i].name}</option>
+      <option value="${i}" >${catsHome[i].name}</option>
       `;
   }
   document.getElementById("select").innerHTML = catData;
