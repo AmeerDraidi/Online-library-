@@ -115,7 +115,7 @@ body {
     color: #000;
 }
 
-.book-cover img {
+.book-cover .booksImg {
     width: 86%;
     border-radius: 10px 10px 0px 0px;
 }
