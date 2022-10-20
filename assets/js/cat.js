@@ -73,7 +73,11 @@ catClear.onclick = function () {
       localStorage.removeItem("catsList");
       cats = [];
       tbody.innerHTML = "";
-      Swal.fire("تمت عملية الحذف", "تمت عملية حذف جميع الأصناف بنجاح ", "success");
+      Swal.fire(
+        "تمت عملية الحذف",
+        "تمت عملية حذف جميع الأصناف بنجاح ",
+        "success"
+      );
     }
   });
 };
@@ -139,7 +143,7 @@ function updateCat() {
 }
 submitBtn.setAttribute("disabled", "disabled");
 catName.addEventListener("keyup", function () {
-  let reg = /^.{5,}$/;
+  let reg = /^.{4,}$/;
   if (reg.test(catName.value)) {
     submitBtn.removeAttribute("disabled");
     document.getElementById("catalert").classList.replace("d-block", "d-none");
