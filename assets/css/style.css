@@ -804,3 +804,17 @@ body {
 }
 
 /* end of about section */
+
+/* Api Section */
+.searchBtn{
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+    color: var(--whiteColor);
+    font-size: 20px;
+}
+.no-card{
+    border-radius: 0;
+}
+.no-card:hover{
+    transform: translateX(0);
+}
