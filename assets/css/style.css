@@ -868,3 +868,6 @@ body {
     z-index: 2;
     display: none;
 }
+.sidebar{
+    height: 100vh;
+}

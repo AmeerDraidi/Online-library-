@@ -4,31 +4,46 @@
 <head>
   <meta charset="utf-8">
   <title>تسجيل الدخول </title>
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/sign_in.css">
+  <style>
+    input{
+      direction: ltr;
+    }
+  </style>
 </head>
 
 <body>
   <div class="center">
     <h1>تسجيل الدخول </h1>
-    <form method="post">
+    <div class="form">
+    <!-- <form method="post" onsubmit="check()"> -->
       <div class="txt_field">
-        <input class="name" type="text" required>
+        <input class="name" type="text" id="name" required>
         <span></span>
         <label>اسم المستخدم</label>
       </div>
       <div class="txt_field">
-        <input class="pass" type="password" required>
+        <input class="pass" type="password" id="pass" required>
         <span></span>
         <label>كلمة السر </label>
       </div>
       <div class="pass">هل نسيت كلمة السر ؟</div>
-      <input type="submit" value="Login">
+      <input type="submit" value="Login" id="loginBtn">
       <div class="signup_link">
         ليس لديك حساب؟ <a class="btn" href="#">التسجيل </a>
       </div>
-    </form>
+      <div class="error">
+        <div class="alert alert-danger d-none" role="alert" id="alert">
+          اسم المستخدم أو كلمة المرور خاطئة !
+        </div>
+      </div>
+    <!-- </form> -->
   </div>
-
+  </div>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/signin.js"></script>
 </body>
 
 </html>
