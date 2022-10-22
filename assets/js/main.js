@@ -27,7 +27,7 @@ function BookDisplay(){
     `;
   }
   showBooks.innerHTML = booksData;
-  console.log(booksData);
+  //console.log(booksData);
 }
 function catDisplay(){
     let catData = '';
@@ -42,7 +42,7 @@ function catDisplay(){
       </div>`;
   }
   showDiv.innerHTML = catData;
-  console.log(catData);
+  //console.log(catData);
 }
 function select() {
   let catData = "";
@@ -116,6 +116,6 @@ function writerShow() {
       `;
   }
   writerDiv.innerHTML = writerBody;
-  console.log(writerBody);
+  console.log(writersSection);
 }
 // End Of Writer Section Show
