@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>المكتبة</title>
+  <!-- animate.css -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+
   <link rel="icon" href="assets/img/logo.jpg">
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -18,6 +21,15 @@
 </head>
 
 <body>
+
+
+
+  <!-- button to the Top -->
+  <a href="#" class="btnTop">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+  <!-- button to the Top -->
+
 
 
   <!-- start loader -->
@@ -36,9 +48,10 @@
   <!-- end loader -->
 
   <!-- Start nav Section -->
-  <nav class="navbar navbar-expand-lg navbar-light py-3">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand heads" href="#">مكتبة النور</a>
+      <a class="navbar-brand heads animate__animated animate__backInRight wow" data-wow-duration="1s" href="#">مكتبة
+        النور</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,25 +59,32 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link heads" href="#books">كل الكتب</a>
+            <a class="nav-link heads animate__animated animate__backInLeft wow" data-wow-duration="1s" href="#books">كل
+              الكتب</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link heads" href="#cat">التصنيفات</a>
+            <a class="nav-link heads  animate__animated animate__backInLeft wow" data-wow-duration="1s"
+              href="#cat">التصنيفات</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link heads" href="#writers">الكَتاب</a>
+            <a class="nav-link heads animate__animated animate__backInLeft wow" data-wow-duration="1s"
+              href="#writers">الكَتاب</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link heads" href="#gallery">المعرض</a>
+            <a class="nav-link heads animate__animated animate__backInLeft wow" data-wow-duration="1s"
+              href="#gallery">المعرض</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link heads" href="#about">من نحن</a>
+            <a class="nav-link heads animate__animated animate__backInLeft wow" data-wow-duration="1s" href="#about">من
+              نحن</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link heads" href="ApiBooks.html" target="_blank">كتب خارجية</a>
+            <a class="nav-link heads animate__animated animate__backInLeft wow" data-wow-duration="1s"
+              href="ApiBooks.html" target="_blank">كتب خارجية</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">تسجيل الدخول</a>
+            <a class="nav-link active animate__animated animate__flip wow" data-wow-duration="1s" href="./sign_in.html">تسجيل
+              الدخول</a>
           </li>
 
         </ul>
@@ -73,23 +93,29 @@
   </nav>
   <!-- End nav section -->
   <section class="home">
-    <div class="container">
+    <div class="container" id="home">
       <div class="home-content row d-flex justify-content-center align-items-center">
         <div class="col-md-6">
-          <img src="assets/img/921978b8-8f08-481b-81c9-16fd039a4e76.jfif" class="w-100" alt="">
+          <img src="assets/img/921978b8-8f08-481b-81c9-16fd039a4e76.jfif" class="w-100" alt="books">
         </div>
 
-        <div class="home-content-desc mt-5 col-md-6">
-          <h2 class="home-heading">الكتب الجيدة لا تبوح بكل أسرارها مرة واحدة</h2>
-          <p class="my-4 w-75">من المستحيل أن تؤسس حضارة قائمة على الخوف والكراهية والقسوة,فمثل هذه الحضارة إن وجدت لا
+        <div class="home-content-desc mt-5 col-md-6 animate__animated animate__lightSpeedInLeft wow"
+          data-wow-duration="1s">
+          <h2 class="home-heading animate__animated animate__lightSpeedInLeft wow" data-wow-duration="1s"
+            data-wow-delay="1s">الكتب الجيدة لا تبوح بكل أسرارها مرة واحدة</h2>
+          <p class="my-4 w-75 animate__animated animate__lightSpeedInLeft wow" data-wow-duration="1s"
+            data-wow-delay="1s">من المستحيل أن تؤسس حضارة قائمة على الخوف والكراهية والقسوة,فمثل هذه الحضارة إن وجدت لا
             يمكن أن تبقى</p>
-          <button class="btn read-btn rounded-pill">اقرأ الأن</button>
+          <button class="btn read-btn rounded-pill animate__animated animate__lightSpeedInLeft wow"
+            data-wow-duration="1s" data-wow-delay="1.5s">اقرأ الأن</button>
         </div>
+
+
       </div>
     </div>
   </section>
   <section class="cat mt-2" id="cat">
-    <h3>تصنيفات الكتب</h3>
+    <h3 class="animate__animated animate__zoomInDown wow" data-wow-duration="1s">تصنيفات الكتب</h3>
     <div class="container">
       <div class="row mt-3" id="catsShow">
         <!-- <div class="col-lg-2 col-md-3 col-sm-6">
@@ -150,11 +176,11 @@
     </div>
   </section>
   <section class="book container" id="books">
-    <div class="title mt-5 text-center">
+    <div class="title mt-5 text-centeranimate__animated animate__bounceInUp wow" data-wow-duration="1s">
       <i class="fa-solid fa-book-open"></i>
       <p>كتب جديدة</p>
     </div>
-    <div class="row mt-5 flex-row-reverse" id="bookshow" >
+    <div moveclass="row mt-5 flex-row-reverse" id="bookshow">
       <!-- <div class="col-lg-3 col-md-3 col-sm-6">
         <div class="book-cover text-center">
           <img src="assets/img/books covers/1.jpg" class=booksImg h-100" alt="Five feet Apart" />
@@ -455,7 +481,7 @@
   <section class="about pb-5 mt-5" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 ">
+        <div class="col-md-3  move">
           <div class="library">
             <i class="fa-solid fa-book-open-reader"></i>
             <span>المكتبة</span>
@@ -486,7 +512,7 @@
           </div>
 
         </div>
-        <div class="col-md-3 quickLinks">
+        <div class="col-md-3 quickLinks move">
           <p class="text-capitalize  head">
             روابط سريعة </p>
           <ul class="p-0">
@@ -518,7 +544,7 @@
 
         </div>
 
-        <div class="col-md-3 contact">
+        <div class="col-md-3 contact move">
           <p class="text-capitalize head">اتصل بنا </p>
 
           <ul class="p-0">
@@ -545,7 +571,7 @@
           </ul>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 move">
           <p class="head">المدونات الحديثة </p>
 
           <ul class="recentBlog p-0">
@@ -580,6 +606,13 @@
   <!-- jquery -->
   <script src="assets/js/jquery-3.6.1.min.js"></script>
   <script src="assets/js/jquery.js"></script>
+
+  <!-- wow.js library -->
+  <script src="assets/js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
   <!-- main Js file  -->
   <script src="assets/js/main.js" type="module"></script>
 </body>
