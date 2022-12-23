@@ -10,7 +10,7 @@ let Name = name.value;
 Btn.onclick= function(){
 if(name.value == LocalName && pass.value == LocalPass)
 {
-    location.href = "/../../admin.html";
+    location.href = "/admin.html";
     sessionStorage.setItem("admin",true);
 }  
 else{
